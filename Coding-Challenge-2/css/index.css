@@ -5,3 +5,55 @@ div{
     padding: 5px;
 }
 
+@media only screen and (max-width: 600px){
+    .content{
+        display: none;
+    }
+
+    .heading{
+        display: none;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .twoBox{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-box{
+        display:flex;
+        justify-content: center;
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 990px){
+    .heading{
+        display: none;
+    }
+
+    .twoBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .nav-box{
+        width: 150px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+    }
+}
